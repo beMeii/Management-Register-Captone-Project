@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 20, 2022, 11:05:54 AM
+    Author     : mac
+*/
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.u-btn {
+  all: unset;
+  cursor: pointer;
+}
+
+.chatbox {
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  bottom: 0;
+  position: fixed;
+  right: 1em;
+  -webkit-transform: translatey(23.5em);
+          transform: translatey(23.5em);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  width: 18.5em;
+}
+
+.chatbox--is-visible {
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+}
+
+.chatbox__header {
+  background: #4e73df;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0.75em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.chatbox__header-cta-text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.025rem;
+}
+
+.chatbox__header-cta-icon {
+  color: #fff;
+  margin-right: 0.75em;
+}
+
+.chatbox__header-cta-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  padding: 0.5em;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.chatbox__header-cta-btn:hover {
+  color: #fff;
+}
+
+.chatbox__display {
+  background: #ededed;
+  height: 20em;
+  overflow: auto;
+  padding: 0.75em;
+}
+
+.chatbox__display-chat {
+  background: #fff;
+  border-radius: 0.5em;
+  color: #666;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0.75em;
+  text-align: justify;
+}
+
+.chatbox__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chatbox__form-input {
+  border: none;
+  color: #222;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 1.25em 1em;
+  width: 100%;
+}
+
+.chatbox__form-input:required {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.chatbox__form-submit {
+  background: none;
+  z-index: 999;
+  border: none;
+  color: #aaa;
+  padding: 1em;
+}
+/*# sourceMappingURL=chat.css.map */
